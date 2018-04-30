@@ -25,7 +25,7 @@ public:
     void setBoids ( std::vector<Boid>& boids )
     {
       neighborhood.clear();
-      for ( auto boid: boids )
+      for ( auto& boid: boids )
       {
         neighborhood.insert( boid );
       }

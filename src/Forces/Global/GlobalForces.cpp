@@ -18,9 +18,12 @@ void MaxVelocityForce::actOnBoids ( std::vector<Boid>& boids )
 
 
 BoundaryForce::BoundaryForce ( int left, int right, int up, int down, float strength )
-  : left( left ), right( right ), up( up ), down( down ), strength( strength )
-{
-}
+  : left( left ),
+    right( right ),
+    up( up ),
+    down( down ),
+    strength( strength )
+{}
 
 
 void BoundaryForce::actOnBoids ( std::vector<Boid>& boids )
